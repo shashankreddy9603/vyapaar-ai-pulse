@@ -31,14 +31,14 @@ export const WhatsAppSimulator = () => {
     {
       id: '1',
       type: 'received',
-      content: 'Namaste! Silk saree ki price kya hai? Red color mein chahiye.',
+      content: 'Namaste! Basmati rice available hai kya? 5kg bag chahiye.',
       timestamp: new Date(Date.now() - 10 * 60 * 1000),
       status: 'read'
     },
     {
       id: '2',
       type: 'sent',
-      content: '🙏 Namaste! Red silk saree ka price ₹2,500 hai. Premium quality silk hai, very beautiful design! \n\n📸 Photo bhej raha hu dekho:\n\n✅ Free home delivery Hyderabad mein\n✅ 7 days return policy\n\nInterested ho toh batao! 😊',
+      content: '🙏 Namaste! Haan ji, Basmati rice available hai!\n\n📦 Stock Details:\n• 5kg bag - ₹350\n• Fresh stock aaya hai\n• Premium quality\n\n✨ Special Offer:\nAaj 10% off on 10kg pack - ₹630 only!\n\nKya aapko chahiye?',
       timestamp: new Date(Date.now() - 9 * 60 * 1000),
       status: 'read',
       isAI: true
@@ -46,14 +46,14 @@ export const WhatsAppSimulator = () => {
     {
       id: '3',
       type: 'received',
-      content: 'Photo bhejo bhai. Aur koi colors available hai?',
+      content: 'Aur dal bhi hai? Toor dal?',
       timestamp: new Date(Date.now() - 8 * 60 * 1000),
       status: 'read'
     },
     {
       id: '4',
       type: 'sent',
-      content: '📸 [Image: Red Silk Saree]\n\nColors available:\n🔴 Red - ₹2,500\n💙 Blue - ₹2,500\n💚 Green - ₹2,800\n💛 Yellow - ₹2,300\n🖤 Black - ₹2,600\n\nSab fresh stock hai! Konsa color pasand hai?',
+      content: '✅ Toor dal available hai!\n\nStock available:\n🟡 Toor Dal 1kg - ₹120\n🟢 Moong Dal 1kg - ₹110\n🔴 Masoor Dal 1kg - ₹95\n\n🎉 Combo Offer:\nRice 5kg + Toor Dal 1kg = ₹450\n(₹20 bachao!)\n\nInterested ho toh batao! 😊',
       timestamp: new Date(Date.now() - 7 * 60 * 1000),
       status: 'read',
       isAI: true
@@ -94,9 +94,9 @@ export const WhatsAppSimulator = () => {
     // Simulate AI response
     setTimeout(() => {
       const aiResponses = [
-        '✅ Order confirm! Red silk saree book kar diya.\n\n📦 Delivery details:\n• Address: Confirm kariye\n• Time: 2-3 days\n• Payment: Cash/UPI\n\nThank you for choosing us! 🙏',
-        '🎉 Great choice! Is saree ka matching blouse bhi available hai ₹500 mein.\n\nTotal:\n• Saree: ₹2,500\n• Blouse: ₹500\n• Delivery: FREE\n\nPackage deal ₹2,800 (₹200 save!) Interest hai?',
-        '📞 Ek minute, call kar raha hu details discuss karne.\n\nMeantime ye bhi dekho:\n🛍️ Similar designs\n💎 Premium collection\n🎁 Festival offers\n\nWhatsApp number: +91-9876543210',
+        '✅ Stock available hai! Abhi store pe aajao.\n\n📍 Store timing:\n• Morning: 7 AM - 1 PM\n• Evening: 4 PM - 9 PM\n\n🎉 Aaj ka special offer:\nRice + Dal combo pe 10% discount!\n\nAur kuch chahiye? 🙏',
+        '🎊 Festival Special Offers!\n\n• Cooking Oil - 15% OFF\n• Atta 10kg - ₹50 discount\n• Sugar 5kg - Buy 2 Get 1 FREE\n\nValid till Sunday!\n\nStore address: Shop No. 12, Main Road',
+        '✨ Good news! Fresh stock aaya hai:\n\n✅ Premium Basmati Rice\n✅ Organic Pulses\n✅ Pure Desi Ghee\n\nStore pe visit karo ya call karo:\n📞 +91-9876543210',
       ];
 
       const aiMessage: WhatsAppMessage = {
@@ -145,7 +145,7 @@ export const WhatsAppSimulator = () => {
             </div>
             WhatsApp Business Integration
           </h2>
-          <p className="text-muted-foreground">Automated customer conversations with AI assistance</p>
+          <p className="text-muted-foreground">Stock availability updates and promotional offers via WhatsApp</p>
         </div>
         
         <div className="flex gap-2">
@@ -171,9 +171,9 @@ export const WhatsAppSimulator = () => {
                     <Smartphone className="w-5 h-5" />
                   </div>
                   <div>
-                    <CardTitle className="text-white text-lg">Priya Sharma</CardTitle>
+                    <CardTitle className="text-white text-lg">Rajesh Kumar</CardTitle>
                     <CardDescription className="text-white/80 text-sm">
-                      Online • Customer since 2023
+                      Online • Regular customer
                     </CardDescription>
                   </div>
                 </div>
@@ -274,8 +274,8 @@ export const WhatsAppSimulator = () => {
                   <CheckCheck className="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <p className="font-medium text-sm">Auto Response</p>
-                  <p className="text-xs text-muted-foreground">Instant replies to common queries</p>
+                  <p className="font-medium text-sm">Stock Updates</p>
+                  <p className="text-xs text-muted-foreground">Real-time stock availability info</p>
                 </div>
               </div>
               
@@ -294,8 +294,8 @@ export const WhatsAppSimulator = () => {
                   <Camera className="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <p className="font-medium text-sm">Image Recognition</p>
-                  <p className="text-xs text-muted-foreground">Identify products from photos</p>
+                  <p className="font-medium text-sm">Promotion Alerts</p>
+                  <p className="text-xs text-muted-foreground">Notify customers about offers</p>
                 </div>
               </div>
             </CardContent>
@@ -311,25 +311,25 @@ export const WhatsAppSimulator = () => {
                 variant="outline" 
                 size="sm" 
                 className="w-full justify-start text-xs h-auto p-2"
-                onClick={() => setNewMessage('🙏 Namaste! Thanks for your interest. Let me help you with product details.')}
+                onClick={() => setNewMessage('🙏 Namaste! Thanks for your message. Stock available hai, store pe aajao!')}
               >
-                Welcome Message
+                Stock Available
               </Button>
               <Button 
                 variant="outline" 
                 size="sm" 
                 className="w-full justify-start text-xs h-auto p-2"
-                onClick={() => setNewMessage('📦 Your order is confirmed! Delivery in 2-3 days. Track: WhatsApp +91-9876543210')}
+                onClick={() => setNewMessage('😔 Sorry, ye item abhi out of stock hai. Kal fresh stock aayega!')}
               >
-                Order Confirmation
+                Out of Stock
               </Button>
               <Button 
                 variant="outline" 
                 size="sm" 
                 className="w-full justify-start text-xs h-auto p-2"
-                onClick={() => setNewMessage('🎉 Special offer! Buy 2 get 1 free on all sarees. Valid till Sunday!')}
+                onClick={() => setNewMessage('🎉 Festival special! 20% off on rice, dal, and oil. Valid till Sunday. Visit store now!')}
               >
-                Promotion Template
+                Promotion Alert
               </Button>
             </CardContent>
           </Card>

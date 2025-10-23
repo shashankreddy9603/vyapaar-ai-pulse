@@ -38,35 +38,35 @@ export const InventoryTable = () => {
   const [inventory, setInventory] = useState<InventoryItem[]>([
     {
       id: '1',
-      name: 'Silk Saree - Red',
-      category: 'Clothing',
-      stock: 15,
-      price: 2500,
+      name: 'Basmati Rice - 5kg',
+      category: 'Grains',
+      stock: 25,
+      price: 350,
       status: 'in-stock',
       lastUpdated: '2 hours ago'
     },
     {
       id: '2',
-      name: 'Cotton Kurta Set',
-      category: 'Clothing',
-      stock: 8,
-      price: 800,
+      name: 'Toor Dal - 1kg',
+      category: 'Pulses',
+      stock: 12,
+      price: 120,
       status: 'in-stock',
       lastUpdated: '1 hour ago'
     },
     {
       id: '3',
-      name: 'Designer Lehenga',
-      category: 'Clothing',
-      stock: 3,
-      price: 5000,
+      name: 'Sunflower Oil - 1L',
+      category: 'Oil & Ghee',
+      stock: 4,
+      price: 180,
       status: 'low-stock',
       lastUpdated: '30 minutes ago'
     },
     {
       id: '4',
-      name: 'Handloom Dupatta',
-      category: 'Accessories',
+      name: 'Atta Flour - 10kg',
+      category: 'Grains',
       stock: 0,
       price: 400,
       status: 'out-of-stock',
@@ -140,7 +140,7 @@ export const InventoryTable = () => {
                 <Mic className="w-8 h-8 mx-auto mb-2 text-secondary-accent" />
                 <p className="text-sm text-muted-foreground mb-2">Record Voice Message</p>
                 <p className="text-xs text-muted-foreground italic">
-                  "Bhaiya, 5 silk sarees aaye hain, red color mein, 2500 rupees each"
+                  "Bhaiya, 20 kg basmati rice aaya hai, 350 rupees per 5kg"
                 </p>
                 <Button variant="outline" size="sm" className="mt-2">
                   <Mic className="w-4 h-4 mr-2" />

@@ -21,7 +21,7 @@ const Index = () => {
     {
       icon: MessageSquare,
       title: "WhatsApp Integration",
-      description: "Seamless integration with WhatsApp Business API for customer communication",
+      description: "Send stock updates and promotional offers directly through WhatsApp",
       color: "accent"
     },
     {
@@ -62,7 +62,7 @@ const Index = () => {
             </p>
             
             <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Transform your Indian MSME with voice + photo WhatsApp inputs, automated inventory management, and AI-generated marketing materials
+              Transform your kirana store with voice + photo WhatsApp inputs, automated inventory management, and instant stock availability updates for customers
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
