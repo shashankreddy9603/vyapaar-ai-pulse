@@ -28,21 +28,21 @@ export const AIChat = () => {
     {
       id: '1',
       type: 'ai',
-      content: 'Hello Rajesh! I\'m your VyaapaarAI assistant. I can help you with inventory management, customer queries, and generating marketing materials. How can I assist you today?',
+      content: 'Namaste! 🙏 I\'m your VyaapaarAI assistant. I can help with inventory, stock updates, and promotional messages for your kirana store. How can I help?',
       timestamp: new Date(Date.now() - 5 * 60 * 1000),
     },
     {
       id: '2',
       type: 'user',
-      content: 'Can you help me create a WhatsApp message for my new saree collection?',
+      content: 'Can you create a WhatsApp message for our new stock arrival?',
       timestamp: new Date(Date.now() - 4 * 60 * 1000),
     },
     {
       id: '3',
       type: 'ai',
-      content: '🌟 *New Collection Alert!* 🌟\n\nDear valued customers,\n\nWe\'re excited to introduce our latest silk saree collection! \n\n✨ Premium quality silk\n✨ Traditional and modern designs\n✨ Starting from ₹2,500\n✨ Free home delivery in Hyderabad\n\nWhatsApp us at +91-9876543210 to view the collection!\n\n#SilkSarees #TraditionalWear #HyderabadFashion',
+      content: '✨ *नमस्ते!* ✨\n\nFresh stock just arrived! 🛒\n\n💫 *New Arrivals*\n✅ Premium rice & wheat\n✅ Fresh fruits & vegetables\n✅ Daily essentials\n\n📱 Check availability on WhatsApp!\n*Visit us today!*',
       timestamp: new Date(Date.now() - 3 * 60 * 1000),
-      tokens: 125
+      tokens: 87
     }
   ]);
   
@@ -110,10 +110,10 @@ export const AIChat = () => {
   };
 
   const suggestedPrompts = [
-    "Create a Diwali marketing campaign",
-    "Analyze my best-selling products",
-    "Generate pricing for new inventory",
-    "Create a customer feedback survey"
+    "Stock availability message",
+    "Check inventory status",
+    "Create promotion message",
+    "Get reorder suggestions"
   ];
 
   return (
