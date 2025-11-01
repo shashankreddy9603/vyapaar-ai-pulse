@@ -71,8 +71,8 @@ const Index = () => {
                 size="lg" 
                 className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 shadow-elegant hover-lift text-lg px-8 py-6"
               >
-                <Link to="/auth">
-                  Start Free Trial
+                <Link to="/dashboard">
+                  Launch Dashboard
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
